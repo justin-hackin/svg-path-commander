@@ -46,6 +46,7 @@ import pathToAbsolute from './convert/pathToAbsolute';
 import pathToRelative from './convert/pathToRelative';
 import pathToCurve from './convert/pathToCurve';
 import pathToString from './convert/pathToString';
+import getSVGMatrix from './process/getSVGMatrix';
 
 /**
  * Creates a new SVGPathCommander instance with the following properties:
@@ -96,6 +97,7 @@ class SVGPathCommander {
   public static pathToCurve = pathToCurve;
   public static pathToString = pathToString;
   public static arcToCubic = arcToCubic;
+  public static getSVGMatrix = getSVGMatrix;
   // declare class properties
   declare segments: PathArray;
   declare round: number | 'off';
